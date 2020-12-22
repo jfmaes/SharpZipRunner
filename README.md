@@ -4,6 +4,9 @@ Get PIC code from your assembly either by using donut or metasploit or cobaltstr
 
 zip the .bin file and encrypt it with a password, this assembly decrypts the zip entry in memory and executes it using D/Invokes injection API. 
 
+capable of injecting in a running process, or by creating a new process first and injecting into the newly created process. 
+injection in itself should theoritically be possible, but causes crashes. as injecting into yourself is not really what I wanted to achieve here, did not really try to fix that issue.
+
 tested by dropping the encrypted zip on disk, but could probably also work entirely in memory with some modifications. 
 only supports PIC payloads, tried creating a runPE variant but failed miserably :) 
 
