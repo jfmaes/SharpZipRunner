@@ -1,5 +1,11 @@
 # SharpZipRunner
 Executes position independent shellcode from an encrypted zip 
+Get PIC code from your assembly either by using donut or metasploit or cobaltstrike RAW format.  
+
+zip the .bin file and encrypt it with a password, this assembly decrypts the zip entry in memory and executes it using D/Invokes injection API. 
+
+tested by dropping the encrypted zip on disk, but could probably also work entirely in memory with some modifications. 
+only supports PIC payloads, tried creating a runPE variant but failed miserably :) 
 
 
 ``` 
